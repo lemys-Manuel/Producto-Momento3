@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Django</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="../static/styles/estilosHome.css">
+<!-- Animated CSS -->
+<link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+
+
+<header>
+    {% include './shared/menu.html' %}
+</header>
+<body>
+<main>
+    <section>
+        
+        <div class="banner">
+            <img src="../static/img/logo.JPG" alt="logo">
+           
+
+        </div>
+    </section>
+ 
+    <section>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-5 text-center">
+                  <img class="animate__animated animate__bounce animate__slow"src="../static/img/plato.jpg" alt="plato" class="img-fluid w-100">
+                  <h1>El Sabor de Nuestra Costa</h1>
+                  <p class="animate__animated animate__fadeInUp">Tenemos los mejores Platos Tipicos con un sabor exquisito a tu paladar
+                    ven y disfruta de un sabor que jamás olvidaras una experiencia unica que vas a querer Repetir.
+                  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid  g-0">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <img   src="../static/img/huerta.jpg" alt="huerta"class="img-fluid w-100 h-100">
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center"><img  class="animate__animated animate__bounce animate__slow" src="../static/img/vejetal1.jpg" alt="vejetal1"class="img-fluid w-100"></div>
+                        <h2 class="fw-bold">CATERING</h2>
+                        <P class="animate__animated animate__fadeInUp">BERENJENAS. Hablamos ahora una 'prima cercana' tanto del tomate como del pimiento:
+                             la berenjena. Y es que todos ellos pertenecen a la familia de las plantas denominadas solanáceas (al igual, por cierto, que la patata,
+                              aunque ésta no sea fruto sino un tubérculo).</P>
+
+                        <div class="col-12 col-md-6 text-center"><img  class="animate__animated animate__bounce animate__slow" src="../static/img/vejetal2.jpg" alt="vejetal2"class="img-fluid w-100"></div>
+                        <h2 class="fw-bold">Servicios Sociales</h2>
+                        <p class="animate__animated animate__fadeInUp">El arroz constituye el alimento básico de una parte muy importante
+                             de la humanidad y su cultivo está estrechamente unido al desarrollo alimentario de diversas sociedades. Es el 
+                             fruto maduro de un cereal de origen asiático conocido en botánica como Oryza sativa, de la familia de las gramíneas.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section >
+        <div class="container menu">
+            <div class="row justify-content-center p-5">
+                <div class="col-12 text-center text-white">
+                    <h2 class="mb-4">Nuestros Platos</h2>
+                </div>
+                 <!-- Pendiente animar imagenes hacia adentro -->
+                <div class="col-12 col-md-3 ">
+                    <h4 class="text-white">pescado frito</h4>
+                    <img  src="../static/img/plato1.jpg" alt="p1" class="img-fluid w-100 zoom">
+                </div>
+                
+                <div class="col-12 col-md-3">
+                    <h2 class="text-white">Sancocho</h2>
+                    <img src="../static/img/plato2.jpg" alt="p2" class="img-fluid w-100 h-100 zoom">
+                </div>
+                
+                <div class="col-12 col-md-3">
+                    <h1 class="text-white">Camarones</h1>
+                    <img src="../static/img/plato3.jpg" alt="p3" class="img-fluid w-100 h-100 zoom">
+                </div>
+                
+                <div class="col-12 text-center mt-4">
+                    <a href="#"class="btn btn-Outline-ligth text-white">Ver Menú</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<br>
+{% include './shared/footer.html' %}
+
+
+
+
+    
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!-- animaciones wow -->
+<script src="../static/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>            
+</body>
+</html>
